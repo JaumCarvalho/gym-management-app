@@ -7,7 +7,7 @@ import {
   IonSearchbar, IonRow, IonCol, 
   IonSelect, IonSelectOption, IonList, IonItemDivider } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
-import { addCircle, menuOutline, notifications } from 'ionicons/icons';
+import { addCircle, chevronForwardCircle, menuOutline, notifications } from 'ionicons/icons';
 import { MemberComponent } from "../../../components/member/member.component";
 
 @Component({
@@ -32,7 +32,12 @@ import { MemberComponent } from "../../../components/member/member.component";
 export class MembersPage implements OnInit {
 
   constructor() {
-    addIcons({menuOutline,notifications,addCircle});
+    addIcons({
+      menuOutline,
+      notifications,
+      addCircle,
+      chevronForwardCircle
+    });
 }
 
   ngOnInit() {
