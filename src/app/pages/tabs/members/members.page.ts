@@ -8,13 +8,14 @@ import {
   IonSelect, IonSelectOption, IonList, IonItemDivider } from '@ionic/angular/standalone';
 import { addIcons } from 'ionicons';
 import { addCircle, menuOutline, notifications } from 'ionicons/icons';
+import { MemberComponent } from "../../../components/member/member.component";
 
 @Component({
   selector: 'app-members',
   templateUrl: './members.page.html',
   styleUrls: ['./members.page.scss'],
   standalone: true,
-  imports: [IonItemDivider, IonList, IonCol, IonRow, 
+  imports: [IonItemDivider, IonList, IonCol, IonRow,
     IonIcon,
     IonButtons,
     IonButton,
@@ -26,8 +27,7 @@ import { addCircle, menuOutline, notifications } from 'ionicons/icons';
     IonRow,
     IonCol,
     IonSelect,
-    IonSelectOption
-  ]
+    IonSelectOption, MemberComponent]
 })
 export class MembersPage implements OnInit {
 
